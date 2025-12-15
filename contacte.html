@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte i Comissions | The Prosthetics Studio</title>
+    
+    <meta name="description" content="Formulari de contacte per a projectes FX i comissions de pròtesis de silicona a mida.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <h1><a href="index.html"><img src="images/logo.png" alt="Logo" width="120">The Prosthetics Studio</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="productes.html">Productes i Comissions</a></li>
+                <li><a href="sobre_nosaltres.html">Sobre Nosaltres</a></li>
+                <li><a href="contacte.html" class="active">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Inicia el teu Projecte FX</h2>
+            <p>Utilitza el formulari per sol·licitar un pressupost o fer una consulta. T'aconsellem que ens donis tots els detalls possibles per a una resposta ràpida i precisa.</p>
+
+            <form action="confirmacio.html" method="GET" id="contact-form">
+                
+                <fieldset>
+                    <legend>Dades Personals i de Contacte</legend>
+                    
+                    <div class="form-group">
+                        <label for="nom">Nom Complet:</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correu Electrònic:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefon">Telèfon (opcional):</label>
+                        <input type="tel" id="telefon" name="telefon" pattern="[0-9]{9}">
+                    </div>
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Detalls de la Comissió</legend>
+                    
+                    <div class="form-group">
+                        <label for="servei">Tipus de Servei Interessat:</label>
+                        <select id="servei" name="servei" required>
+                            <option value="">-- Selecciona una opció --</option>
+                            <option value="ferides_simples">Kits de Ferides (45€ - 100€)</option>
+                            <option value="mascara_completa">Màscara o Pròtesi Facial Complexa</option>
+                            <option value="comissio_a_mida">Comissió Artística A Mida (Especial)</option>
+                            <option value="altres">Altres Consultes FX</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="missatge">Descriu el teu Projecte o Idea:</label>
+                        <textarea id="missatge" name="missatge" rows="6" required></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset class="rgpd-section">
+                    <legend>Consentiment Legal (RGPD)</legend>
+                    
+                    <div class="form-group-check">
+                        <input type="checkbox" id="rgpd-accepta" name="rgpd-accepta" value="si" required>
+                        <label for="rgpd-accepta">He llegit i accepto la <a href="politica_privacitat.html" target="_blank">Política de Privacitat</a>. Consenteixo el tractament de les meves dades per respondre a la consulta.</label>
+                    </div>
+                </fieldset>
+                
+                <div class="form-actions">
+                    <button type="submit" class="cta-button">Enviar Sol·licitud</button>
+                    <button type="reset" class="secondary-button">Netejar Camps</button> 
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 The Prosthetics Studio. Tots els drets reservats.</p>
+        <div class="legal-links">
+            <a href="politica_privacitat.html">Política de Privacitat</a>
+            <a href="#">Avís Legal</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/hht.sy/" target="_blank" rel="noopener noreferrer">Instagram</a> | <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
+        </div>
+    </footer>
+</body>
+</html>
